@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiniBlog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>MiniBlog</h1>
+        <p>Share your thoughts</p>
+    </header>
+
+    <main>
+
+        <!-- Create Post -->
+        <section class="create-post">
+            <h2>Create a Post</h2>
+
+            <textarea id="postText"
+                placeholder="What's on your mind?"
+                maxlength="200"></textarea>
+
+            <div class="post-bottom">
+                <span id="counter">0/200</span>
+                <button id="postButton">Post</button>
+            </div>
+        </section>
+
+        <!-- Posts -->
+        <section>
+            <h2>Recent Posts</h2>
+            <div id="posts"></div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
